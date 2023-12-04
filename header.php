@@ -10,19 +10,12 @@
     <link rel="stylesheet" href="<?php echo bloginfo('template_directory')."/style.css"?>" />
     <?php wp_head(); ?>
   </head>
-  <body <?php body_class()?>>
+  <body>
   <header>
-        <div class="container">
+        <div class="container d-flex justify-content-center">
             <div class="row">
-                <div class="col-12">
-                    <ul class="list d-flex justify-content-around">
-                        <li><a class="Home" href="index.html">Home</a></li>
-                        <li><a class="Work" href="work.html">Work.</a></li>
-                        <li><a href="#"><i class="fleche bi bi-arrow-up-circle"></i></a></li>
-                        <li><a class="About" href="about.html">About.</a></li>
-                        <li><a class="Contact" href="contact.html">Contact.</a></li>
-                        <nav id="site-navigation" class="main-navigation">
-                                    <?php
+                <div class="menu2 col-12 list d-flex justify-content-start mt-3">
+                         <?php
                                     wp_nav_menu(
                                         array(
                                             'theme_location' => 'main-menu',
@@ -30,8 +23,8 @@
                                         )
                                     );
                                     ?>
-                    </ul>
                 </div>
             </div>
         </div>
     </header>
+   

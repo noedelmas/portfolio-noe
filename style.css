@@ -7,6 +7,13 @@ Description: Ce thème permet de montrer mon portfolio.
 Version: 1.0
 */
 
+
+
+.menu2{
+    justify-content: space-around;
+    display: flex;
+}
+
 .maincontent{
     margin: auto;
     width: 50%;
@@ -30,12 +37,22 @@ header a:hover(){
     list-style: none;
 }
 
+header ul{
+    font-size: 25px;
+    display: flex;
+}
+
+header a{
+    font-weight: bold;
+    margin-left: 15px;
+    
+}
+
 .list li{
     margin-top: 15px;
 }
 
 .Home{
-    color: orange;
     font-size: 25px;
     font-weight: bold;
 }
@@ -54,14 +71,6 @@ header a:hover(){
     font-size: 25px;
     font-weight: bold;
     margin-top: 50px;
-}
-
-.fleche{
-    display: flex;
-    font-size: 50px;
-    color: orange;
-    margin-top: 15px;
-
 }
 
 .test{

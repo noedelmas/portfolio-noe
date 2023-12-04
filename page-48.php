@@ -1,10 +1,4 @@
-<div class="maincontent">
 <?php get_header()?>
- 
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
- 
-    <?php the_content(); ?>
-    <?php wp_link_pages(); ?>
 
     <section>
         <div class="container">
@@ -20,9 +14,12 @@
         </div>
     </section>
 
-    
+    <?php
+                                $post = get_post(121)
+                            ?>
 
-    <?php endwhile; ?>
- 
- <?php endif; ?>
+                            <?php 
+                                echo $post->post_content
+                            ?>
+
  <?php get_footer();?>
